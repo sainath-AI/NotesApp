@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="priority">Priority</string>
+    <string name="done">done</string>
+    <string name="no_filter">No filter</string>
+    <string name="high_to_low">High to Low</string>
+    <string name="low_to_high">Low to High</string>
+
+</resources>

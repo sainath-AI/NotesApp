@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e8"
+        android:orientation="vertical"
+        tools:context=".UI.Fragments.EditNotesFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="Title..."
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/sans_regular"
+                android:layout_marginEnd="16dp"
+
+                />
+            <EditText
+                android:id="@+id/etsubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="subTitle..."
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/sans_regular"
+                android:layout_marginEnd="16dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priority"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sans_regular"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/greenDot"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/greenshape"
+                    android:src="@drawable/ic_baseline_done_24"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/yellowDot"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/yelloeshape"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/RedDot"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/redshape"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etTakenotes"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="Notes.."
+                android:gravity="start"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/sans_regular"
+                android:layout_marginEnd="16dp"
+
+                />
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/DoneNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/red"
+            android:contentDescription="@string/done"
+            android:src="@drawable/ic_baseline_done_24" />
+
+
+
+    </RelativeLayout>
+
+
+
